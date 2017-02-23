@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+/*General Rules for Elements*/
+.hidden {
+	display: none;
+}
+
+/*Header and Nav*/
+#container {
+	max-width: 75em;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+#mainHeader {
+	background-color: #FF5454;
+}
+#socialIcon {
+	display: block;
+	height: 60px;
+	background-color: #FF5454;
+}
+#socialIcon li {
+	list-style-type: none;
+	float: right;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+#socialIcon li a {
+	font-family: 'Questrial', sans-serif;
+	color: #fff7f8;
+	font-size: 1em;
+}
+.icon {
+	width: 35px;
+}
+.title-bar {
+	width: 40px;
+	padding-right: 0rem;
+}
+
+.title-bar .menu-icon {
+	margin-left: 0rem;
+}
+
+/*.menu-icon::after {
+	background: #d1d1d1;
+	box-shadow: 0 7px 0 #cacaca, 0 14px 0 #cacaca;
+}
+
+.menu-icon:hover::after {
+	background: #fff;
+	box-shadow: 0 7px 0 #fff, 0 14px 0 #fff;
+}*/
+
+#mainNav {
+	margin: 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+#mainNav li
+{
+	border-bottom: 1px solid #FF5454;
+}
+
+#mainNav li:first-child {
+	opacity: .2;
+	border-top: 1px solid #FFF7F8;	
+}
+
+#mainNav li:last-child {
+	margin-bottom: 10px;	
+}
+#mainNav li a {
+	display: block;
+	padding: 5px 0px 5px 0px;
+	color: #FF5454;
+	background-color: #FFF7F8;	
+}
+
+#mainNav li a:hover {
+	background-color: #FFF7F8;	
+}
+
+.topLogo {
+	margin: 0 auto;
+	max-width: 150px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+/*#indexSlide {
+	position: absolute;
+	background-color: #f1f1f1;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding-bottom: 50px;
+}*/
+
+.backImages {
+	display: block;
+	
+	width: 100%;
+	height: 590px;
+	background-image: url("../images/homeBg-L.jpg");
+	background-color: #f1f1f1;
+}
+
+.content {
+	max-width: 100%;
+	margin: auto;
+}
+#space {
+	height: 20px;
+	background-color: #FF5454;
+}
