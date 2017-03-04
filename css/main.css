@@ -756,13 +756,13 @@ h2, h3 {
 }
 
 /********************************contact page************************************/
-.contactBackImages {
+/*.contactBackImages {
 	display: block;
 	width: 100%;
 	height: 590px;
 	background-image: url("../images/contactBg.jpg");
 	background-color: #f1f1f1;
-}
+}*/
 
 #contactMaps {
 	margin-top: 40px;
@@ -869,45 +869,161 @@ h2, h3 {
 
 
 /*********************************gallery page**************************************/
-.galleryBackImages {
+/*.galleryBackImages {
 	display: block;
 	width: 100%;
 	height: 590px;
 	background-image: url("../images/galleryBg.jpg");
 	background-color: #f1f1f1;
-}
-#gallery {
+}*/
+.gallery {
 	margin-top: 40px;
 	padding-bottom: 40px;
-	border-bottom: 1px solid #7A7C7C;
 }
-
-.photoGallery h2 {
+.gallery h2{
 	font-family: 'Oswald', sans-serif;
 	font-size: 2.25em;
-	color: #353B3C;
+	color: #FF5454;
 	text-align: center;
 }
 
-.photoGallery h3 {
+.photoGallery {
+	margin: auto;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #7C7A7A;
+}
+.photoGallery p {
+	font-family: 'Quicksand', sans-serif;
+	display: block;
+	font-size: 1em;
+	float: right;
+}
+
+.mainImg {
+	max-height: 100%;
+	border: 5px solid #ff5454;
+	margin: 0 auto;
+}
+
+.photoDesc {
+	margin-top:0px;
+	text-align: center;
+}
+
+.photoDesc h3{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #FF5454;
+	text-align: center;
+	padding-top: 20px;
+	display: block;
+}
+	
+.photoDesc p {
+	font-family: 'Quicksand', sans-serif;
+	display: block;
+	font-size: 1em;
+}
+
+.photoCred {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1em;
+	font-style: italic;
+	color: #FF5454;
+}
+
+/****************thumb slide****************/
+.thumbs{
+    overflow:auto; 
+    white-space:nowrap; 
+    margin-top:20px;
+}
+.thumbs ul{
+    float: left; 
+    transition: 999999s all; 
+    transform: translateX(0);
+}
+.thumbs li{
+  display:inline-block; 
+  margin-right:3px;
+}
+.thumbs li img:hover{
+	opacity:1;
+}
+.thumbs li img{
+	opacity:0.85;
+}
+.thumbs li img:focus{
+	opacity:1;
+}
+.thumbs li img{
+	width:80px;
+}
+ul,li{list-style:none;margin:0;padding:0;}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-button {
+  width: 24px;
+  height: 24px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 43px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 15px none #ffffff;
+  border-radius: 40px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
+
+
+/************************************volunteer page******************************/
+.volunteerCon h2{
+	font-family: 'Oswald', sans-serif;
+	font-size: 2.25em;
+	color: #FF5454;
+	text-align: center;
+}
+.volunteerCon h3{
 	font-family: 'Quicksand', sans-serif;
 	font-size: 1.25em;
 	font-weight: bold;
 	color: #FF5454;
 	text-align: center;
-	line-height: 16px;
-	padding: 5px 0 5px 5px;
+	padding-top: 20px;
 }
 
-
 /************************************donations page******************************/
-.donationsBackImages {
+/*.donationsBackImages {
 	display: block;
 	width: 100%;
 	height: 590px;
 	background-image: url("../images/donationsBg.jpg");
 	background-color: #f1f1f1;
-}
+}*/
 
 #donation {
 	margin-top: 40px;
@@ -1014,13 +1130,13 @@ h2, h3 {
 }
 
 /***********************************Sign IN************************************/
-.signinBackImages {
+/*.signinBackImages {
 	display: block;
 	width: 100%;
 	height: 280px;
 	background-image: url("../images/contactBg.jpg");
 	background-color: #f1f1f1;
-}
+}*/
 
 #loginForm {
 	/*margin-bottom: 30px;*/
@@ -1071,9 +1187,99 @@ h2, h3 {
 	background: #353B3C;
 }
 
+/************************* Admin-Index *********************/
+#updateBox {
+	margin-top: 40px;
+	padding-bottom: 40px;
+}
 
+.updateForm {
+	border: 1px solid #7c7a7a;
+	background: #d1d1d1;
+	padding: 40px;
+	margin-bottom: 20px;
 
+}
 
+.updateForm h2 {
+	font-family: 'Oswald', sans-serif;
+	color: #353B3C;
+	display: block;
+	font-size: 40px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.updateForm p {
+	font-family: 'Quicksand', sans-serif;
+	margin: 5px 0 15px;
+	display: block;
+	font-size: 13px;
+	text-align: center;
+}
+
+.updateForm button {
+	cursor: pointer;
+	width: 100%;
+	border: none;
+	background: #FF5454;
+	color: #FFF;
+	margin: 0 0 5px;
+	padding: 10px;
+	font-size: 15px;
+	float: left;
+	margin-right: 15px;
+}
+
+.updateForm button:hover {
+	background: #353B3C;
+}
+
+/*****************Create User*****************/
+.createUser {
+		margin-top: 40px;
+	padding-bottom: 40px;
+}
+
+#userForm {
+	border: 1px solid #7c7a7a;
+	background: #d1d1d1;
+	padding: 40px;
+}
+
+#userForm h2 {
+	font-family: 'Oswald', sans-serif;
+	color: #353B3C;
+	display: block;
+	font-size: 40px;
+	font-weight: 600;
+	text-align: center;
+}
+
+#userForm p {
+	font-family: 'Quicksand', sans-serif;
+	margin: 5px 0 15px;
+	display: block;
+	font-size: 13px;
+	text-align: center;
+}
+
+#userForm button {
+	cursor: pointer;
+	width: 100%;
+	border: none;
+	background: #FF5454;
+	color: #FFF;
+	margin: 0 0 5px;
+	padding: 10px;
+	font-size: 15px;
+	float: left;
+	margin-right: 15px;
+}
+
+#userForm button:hover {
+	background: #353B3C;
+}
 /*Custom Media Queries*/
 @media screen and (min-width: 23.4375em) { /*375/16*/
 
